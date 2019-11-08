@@ -1,0 +1,18 @@
+{
+  "name": "ProtractorJasmineJs",
+  "dependencies": {
+    "protractor": "^5.3.0",
+    "jasmine-data-provider": "^2.2.0",
+    "jasmine-reporters": "2.3.2",
+    "jasmine-reporter-console": "1.1.0",
+    "protractor-jasmine2-screenshot-reporter": "0.5.0"
+  },
+  "scripts": {
+    "Webdriver-update": "./node_modules/.bin/webdriver-manager update",
+    "Webdriver-start": "./node_modules/.bin/webdriver-manager start",
+    "protractortest": "./node_modules/.bin/protractor config.js",
+    "jasminereport": "./node_modules/.bin/protractor jasminereport.js",
+    "TestSuite": "./node_modules/.bin/protractor configuration.js --suite homepage",
+    "start": "npm run Webdriver-start &&npm, Webdriver-update &&npm protractor"
+  }
+}
